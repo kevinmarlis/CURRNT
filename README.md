@@ -134,6 +134,8 @@ yes
 
 ## API request:
 
+![Example Request](ex_request.png)
+
 Download Postman
 
 Create new API request
