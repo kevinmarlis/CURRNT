@@ -99,5 +99,5 @@ variable "ecs_image_url" {
 variable "dynamodb_table_name" {
   description = "The desired DynamoDB table name."
   type        = string
-  default     = "musicTable"
+  default     = "pipeTable"
 }

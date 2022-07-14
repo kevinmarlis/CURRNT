@@ -590,15 +590,15 @@ resource "aws_cloudwatch_metric_alarm" "ecs_infra_cpu_alarm_high" {
 }
 
 # Create a DynamoDB table.
-resource "aws_dynamodb_table" "music_table" {
+resource "aws_dynamodb_table" "pipe_table" {
   name           = var.dynamodb_table_name
   billing_mode   = "PROVISIONED"
   read_capacity  = 1
   write_capacity = 1
-  hash_key       = "artist"
+  hash_key       = "process"
 
   attribute {
-    name = "artist"
+    name = "process"
     type = "S"
   }
 }
