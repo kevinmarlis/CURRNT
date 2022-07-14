@@ -130,3 +130,26 @@ terraform destroy
 yes
 
 —— 
+
+
+## API request:
+
+Download Postman
+
+Create new API request
+
+Change request type to GET
+
+For AWS deployment:
+In link field, paste output from terraform apply, followed by /submit/ (eg ecsalb-###.us-east-1.elb.amazonaws.com/submit/)
+
+For local deployment: 
+In link field, enter http://localhost:5000/submit/
+
+In body, specify RAW and JSON from dropdown
+
+Run generate_request.py to create example request body
+
+Paste output from generate_request.py into request body
+
+Submit request
