@@ -1,6 +1,5 @@
 # CURRNT
 Combined Utilities for River Routing, Nested Together
-Miles Milosevich, Cedric David
 
 
 ## Local webserver:
